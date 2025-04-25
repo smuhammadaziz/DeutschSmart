@@ -7,7 +7,7 @@ const HeroBanner = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative mt-10 min-h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -84,18 +84,13 @@ const HeroBanner = () => {
               </div>
               <span>German Standards</span>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-yellow-400">✓</span>
-              </div>
-              <span>Modern Curriculum</span>
-            </div>
+
           </motion.div>
         </div>
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white z-10">
+      <div className="absolute mt-10 bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white z-10">
         <span className="text-sm mb-2">Scroll Down</span>
         <svg className="animate-bounce w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
